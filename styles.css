@@ -1,0 +1,188 @@
+.text-js{
+  opacity: 0;
+}
+
+.cursor{
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: -5px;
+  width: 2px;
+  /* Change colour of Cursor Here */
+  background-color: white;
+  z-index: 1;
+  animation: flash 0.5s none infinite alternate;
+}
+
+@keyframes flash{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif
+}
+
+body{
+  background: linear-gradient(135deg,#00C4FF,#9D1BB2);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headline{
+  margin: 20px;
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  position: absolute;
+  bottom: 100px; 
+  h1{
+    letter-spacing: 1.6px;
+    font-weight: 100;
+  }
+}
+
+.gradient-style {
+    position: fixed;
+}
+
+.gradient-style .flex-center {
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .gradient-style .noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .gradient-style .gradient-button {
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    background-color: #50d8d7;
+    background-image: linear-gradient(316deg, #50d8d7 0%, #923993 74%);
+    transition: 500ms;
+    padding-bottom: 42.5px;
+    padding-left: 3.5px;
+  }
+  
+  .gradient-style .gradient-button::after {
+    width: 143px;
+    height: 43px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: "View Message";
+    font-size: 17px;
+    color: #eee;
+    border-radius: 25px;
+    background-color: #222;
+    transition: 500ms;
+  }
+  
+  .gradient-style .gradient-button:hover::after {
+    font-size: 20px;
+    background-color: transparent;
+  }
+  
+  .gradient-style .gradient-button:hover {
+    transform: scale(0.9);
+    background-color: #923993;
+    background-image: linear-gradient(316deg, #923993 0%, #50d8d7 70%);
+    transition: 500ms;
+  }
+  
+  .gradient-style .gradient-button:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  
+  .gradient-style .gradient-button:active {
+    transform: scale(0.7);
+    transition: 200ms;
+  }
+
+/* Glowy Button */
+.glowy-style {
+  position: fixed;
+  bottom: 30px;
+  margin-bottom: 10px;
+}
+.glowy-style .glowy-button {
+  font-size: 20px;
+  background-color: #1b86f9;
+  border: none;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 500ms;
+  box-shadow: 0 0 20px #1b86f9;
+}
+
+.glowy-style .glowy-button:hover {
+  background-color: #fff;
+  color: #1b86f9;
+  box-shadow: 0 0 20px #fff;
+}
+
+.glowy-style .glowy-button:active {
+  box-shadow: 0 0 50px #fff;
+  transform: scale(0.8);
+  transition: 200ms;
+}
+
+.glowy-style .glowy-button:focus {
+  outline: none;
+}
+
+.happy {
+  position: fixed;
+  top: 30px;
+  font-size: 30px;
+  color: white;
+}
+
+.picy {
+  position: absolute;
+  left: 50%;
+  top:50%;
+  z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
